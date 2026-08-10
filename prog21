@@ -1,0 +1,35 @@
+stri = input("Enter a string ")
+vow_list =[]
+cons_list =  []
+for i in stri.lower():
+    
+    v=0
+    if i != " ":
+        for j in stri.lower():
+            if i==j:
+                v=v+1
+        if i in 'aeiou':
+
+            for ch in vow_list:
+
+                if ch[0] ==i:
+                    break
+
+            else:
+                vow_list.append(f"{i},{v}")
+
+        else:
+            for ch in cons_list:
+                if ch[0]==i:
+                    break
+
+            else:
+                cons_list.append(f"{i},{v}")
+
+
+print(vow_list)
+print(cons_list)
+
+
+
+

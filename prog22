@@ -1,0 +1,9 @@
+str1 = input("enter string ")
+str2 = ""
+str2= str1[::-1]
+
+if str1.lower()== str2.lower():
+    print("its a palindrome")
+else:
+    print("Not palindrome")
+
